@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: TestProject
+  profiles:
+    active: dev
+  datasource:
+    username: postgres
+    url: jdbc:postgresql://localhost:5432/course
+    password: 90229932
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8082
