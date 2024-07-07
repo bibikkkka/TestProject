@@ -1,8 +1,8 @@
 package com.bibikkkka.testproject.repositories;
 
-import com.bibikkkka.testproject.entities.Cat;
+import com.bibikkkka.testproject.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface CatRepository extends JpaRepository<Cat, Integer> {}
+public interface UserRepository extends JpaRepository<User, Integer> {}

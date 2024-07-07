@@ -1,16 +1,16 @@
 package com.bibikkkka.testproject.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Data
 @Setter
 @Getter
 @Entity
-@Table(name = "cats")
-public class Cat {
+@Builder
+@AllArgsConstructor
+@Table(name = "users")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,18 +22,18 @@ public class Cat {
     private int weight;
 
 
-    public Cat(String name, int age, int weight) {
+    public User(String name, int age, int weight) {
         this.name = name;
         this.age = age;
         this.weight = weight;
     }
 
-    public Cat() {
+    public User() {
     }
 
     @Override
     public String toString() {
-        return "Cat{" +
+        return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
